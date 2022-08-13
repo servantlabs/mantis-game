@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export"
+    "export": "next export",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "cypress": "^10.0.3",
@@ -14,6 +16,17 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.14.1"
+    "@babel/core": "^7.18.10",
+    "@netlify/plugin-nextjs": "^4.14.1",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
+    "chromatic": "^6.7.4"
   }
 }
