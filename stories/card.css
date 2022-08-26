@@ -5,8 +5,6 @@
     border-radius: 1.5em;
     display: table-cell;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 100px;
-    height: 160px;
     border: solid 6px #343434;
     transition: 0.5s;
   }
@@ -62,4 +60,12 @@
   
   */
   
-  
+  .card-small {
+    width: 50px;
+    height: 80px;
+  }
+
+  .card-large {
+    width: 100px;
+    height: 160px;
+  }

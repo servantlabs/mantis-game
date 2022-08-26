@@ -26,6 +26,7 @@ Dealt.args = {
     backColor2: "#b1cb55",
     backColor3: "#6e3288",
     frontColor: "#b1cb55",
+    size: 'large',
 };
 
 export const inDeck = Template.bind({});
@@ -35,6 +36,18 @@ inDeck.args = {
     backColor2: "#b1cb55",
     backColor3: "#6e3288",
     frontColor: "#b1cb55",
+    size: 'large',
+};
+
+export const Small = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Small.args = {
+    dealt: true,
+    backColor1: "#e07a35", 
+    backColor2: "#b1cb55",
+    backColor3: "#6e3288",
+    frontColor: "#b1cb55",
+    size: 'small',
 };
 /*
 export const Large = Template.bind({});

@@ -10,10 +10,12 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@xstate/react": "^3.0.1",
     "cypress": "^10.0.3",
     "next": "^12.1.5",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "xstate": "^4.33.3"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
