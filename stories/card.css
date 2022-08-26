@@ -1,0 +1,65 @@
+
+.card {
+    padding: 0.5em 1em;
+    margin: 0.5em 1em;
+    border-radius: 1.5em;
+    display: table-cell;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 160px;
+    border: solid 6px #343434;
+    transition: 0.5s;
+  }
+  
+  .bg-card1 {
+    background: linear-gradient(160deg, #dd4a9a 33%, rgba(0, 0, 0, 0) 33%),
+      linear-gradient(160deg, #6e3288 66%, #e07a35 66%);
+  }
+  
+  .bg-card1:hover {
+    background: #dd4a9a;
+  }
+  
+  .bg-card2 {
+    background: linear-gradient(160deg, #e07a35 33%, rgba(0, 0, 0, 0) 33%),
+      linear-gradient(160deg, #b1cb55 66%, #6e3288 66%);
+  }
+  
+  .bg-card2:hover {
+    background: #6e3288;
+  }
+  
+  .bg-red {
+    background: #af031f;
+  }
+  .bg-blue {
+    background: #1a68b2;
+  }
+  .bg-yellow {
+    background: #e7f62b;
+  }
+  .bg-purple {
+    background: #6e3288;
+  }
+  .bg-pink {
+    background: #dd4a9a;
+  }
+  .bg-orange {
+    background: #d25f21;
+  }
+  .bg-green {
+    background: #85d137;
+  }
+  /*  pink: #dd4a9a
+      green: #85d137
+      yellow: #e7f62b
+      orange: #d25f21
+      purple: #6e3288
+      blue: #1a68b2
+      red: #af031f
+  dark gray #85d137
+  
+  
+  */
+  
+  
