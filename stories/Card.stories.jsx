@@ -21,6 +21,7 @@ const Template = (args) => <Card {...args} />;
 export const Dealt = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Dealt.args = {
+    dealt: true,
     backColor1: "#e07a35", 
     backColor2: "#b1cb55",
     backColor3: "#6e3288",
@@ -29,6 +30,7 @@ Dealt.args = {
 
 export const inDeck = Template.bind({});
 inDeck.args = {
+  dealt: false,
     backColor1: "#e07a35", 
     backColor2: "#b1cb55",
     backColor3: "#6e3288",

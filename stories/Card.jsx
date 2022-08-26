@@ -7,17 +7,33 @@ import './card.css';
  */
 export const Card = ({ dealt, backColor1, backColor2, backColor3, frontColor, ...props }) => {
   const mode = dealt ? 'dealt' : 'inDeck';
-  const cardBackground = {
+  const cardFront = {
+      backgroundColor: frontColor
+    } 
+  const cardBack = {
     background: `linear-gradient(160deg, ` + backColor1 + ` 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(160deg, ` + backColor2 + ` 66%, ` + backColor3 + ` 66%)`
-  };
+  
+}
+if (dealt) { 
+  // Return just the solid background for a card facing up
   return (
     <div 
         className={['card', mode].join(' ')} 
-        style={cardBackground}
+        style={cardFront}
         {...props}
         >
     </div>
-
+  );
+} else {
+  return (
+    <div 
+        className={['card', mode].join(' ')} 
+        style={cardBack}
+        {...props}
+        >
+    </div>
+  );
+}
  //   <button
    //   type="button"
  //     className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
@@ -26,7 +42,7 @@ export const Card = ({ dealt, backColor1, backColor2, backColor3, frontColor, ..
  //   >
  //     {label}
  //   </button>
-  );
+  
 };
 
 Card.propTypes = {
