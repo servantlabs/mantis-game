@@ -1,0 +1,7 @@
+.board {
+  background: #eee;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+}
+
