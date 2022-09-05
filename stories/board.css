@@ -4,3 +4,7 @@
   flex-flow: column;
 }
 
+.playerGroup {
+  display: flex;
+  flex-direction: row;
+}

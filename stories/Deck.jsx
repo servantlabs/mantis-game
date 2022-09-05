@@ -33,7 +33,7 @@ cardColors.push(cardColors[index]); // save color to array in fourth place
 
 return (
   <div className="deck">
-    <h2>Deck</h2>
+    
     <Card 
       dealt={false} 
       size="large" 

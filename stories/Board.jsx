@@ -10,6 +10,7 @@ export const Board = ({activePlayer}) => (
   <div className="board"> 
     
     <Deck />
+    <div className="playerGroup">
     <Player 
       name="Lucas"
       score={7}
@@ -58,5 +59,6 @@ export const Board = ({activePlayer}) => (
       pinkCards={8}
       active={false}
     />
+    </div>
   </div>
 );

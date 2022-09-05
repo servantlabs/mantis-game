@@ -6,7 +6,7 @@ import './player.css';
 export const Player = ({name, score, active, leading, winner, greenCards, yellowCards, redCards, blueCards, pinkCards, orangeCards, purpleCards}) => (
   <div className={['player', `player-active-${active}`].join(' ')}>
     <div className="name">
-      <h2>Player: {name}</h2>
+      <h2>{name} | Score: {score}</h2>
     </div>
     
     <div className='cardHolder'>
@@ -53,7 +53,7 @@ export const Player = ({name, score, active, leading, winner, greenCards, yellow
         frontColor="pink"
       />}
     </div>
-    <div className='scorePile'> <h2>Score: {score}</h2></div>
+    <div className='scorePile'> </div>
   </div>
 );
 
