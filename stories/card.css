@@ -1,12 +1,17 @@
 
 .card {
-    padding: 0.5em 1em;
-    margin: 0.5em 1em;
     border-radius: 1.5em;
-    display: table-cell;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border: solid 6px #343434;
     transition: 0.5s;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
   }
   
   .bg-card1 {
@@ -61,8 +66,13 @@
   */
   
   .card-small {
-    width: 50px;
-    height: 80px;
+    width: 55px;
+    height: 60px;
+    padding: 5px;
+    border-width: 3px;
+    border-radius: 7px;
+    font-size: 2em;
+    line-height: 0em;
   }
 
   .card-large {

@@ -1,7 +1,34 @@
-.board {
-  background: #eee;
+.player {
   display: flex;
-  flex-flow: column;
-  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  border: solid black 1px;
 }
 
+.player-active-false {
+  background-color: white;
+}
+
+.player-active-true {
+  background-color: red;
+}
+
+.cardHolder {
+
+background-color: rgb(167, 167, 167);
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+padding: 5px;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+}
+
+.scorePile {
+width: 100%;
+display: flex;
+}

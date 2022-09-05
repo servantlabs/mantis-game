@@ -5,7 +5,7 @@ import './card.css';
 /**
  * Primary UI component for user interaction
  */
-export const Card = ({ dealt, backColor1, backColor2, backColor3, frontColor, size, ...props }) => {
+export const Card = ({ dealt, backColor1, backColor2, backColor3, frontColor, size, value, ...props }) => {
   const mode = dealt ? 'dealt' : 'inDeck';
   const cardFront = {
       backgroundColor: frontColor
@@ -18,10 +18,11 @@ if (dealt) {
   // Return just the solid background for a card facing up
   return (
     <div 
-        className={['card', `card-${size}`, mode].join(' ')} 
-        style={cardFront}
+        className={['card', `card-${size}`, `bg-${frontColor}`, mode].join(' ')} 
+        
         {...props}
         >
+          <p>{value}</p>
     </div>
   );
 } else {
