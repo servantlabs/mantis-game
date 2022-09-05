@@ -11,7 +11,7 @@ export const Card = ({ dealt, backColor1, backColor2, backColor3, frontColor, si
       backgroundColor: frontColor
     } 
   const cardBack = {
-    background: `linear-gradient(160deg, ` + backColor1 + ` 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(160deg, ` + backColor2 + ` 66%, ` + backColor3 + ` 66%)`
+    background: `linear-gradient(160deg, var(--` + backColor1 + `) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(160deg, var(--` + backColor2 + `) 66%, var(--` + backColor3 + `) 66%)`
   
 }
 if (dealt) { 

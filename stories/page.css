@@ -1,3 +1,15 @@
+:root {
+  
+  --red: #af031f;
+  --blue:#1a68b2;
+  --yellow: #e7f62b;
+  --purple: #6e3288;
+  --pink: #dd4a9a;
+  --orange: #d25f21;
+  --green: #85d137;
+  
+}
+
 div {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   
